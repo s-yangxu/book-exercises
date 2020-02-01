@@ -2,7 +2,7 @@
 
 # Install devtools package: allows installations from GitHub
 install.packages("devtools")
-
+library(devtools)
 # Install "fueleconomy" dataset from GitHub
 devtools::install_github("hadley/fueleconomy")
 
@@ -11,7 +11,7 @@ library(fueleconomy)
 
 # You should now have access to the `vehicles` data frame
 # You can use `View()` to inspect it
-
+View(fueleconomy::vehicles)
 
 # Select the different manufacturers (makes) of the cars in this data set. 
 # Save this vector in a variable
@@ -51,4 +51,6 @@ library(fueleconomy)
 
 
 # What was the most efficient Honda model of 1995?
+
+
 
